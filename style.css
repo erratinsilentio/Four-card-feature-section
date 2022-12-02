@@ -50,6 +50,7 @@ body {
 
 .text-2 {
   font-size: 2rem;
+  font-weight: 600;
   color: var(--DarkBlue);
 }
 
@@ -68,14 +69,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-.grid {
+.card-grid {
   width: auto;
   height: auto;
   display: grid;
   grid-template-columns: 20vw 20vw 20vw;
   grid-template-rows: 7.5vw 7.5vw 7.5vw 7.5vw;
   grid-gap: 60px;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
 }
 
