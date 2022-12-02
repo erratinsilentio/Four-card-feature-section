@@ -69,6 +69,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .card-grid {
   width: auto;
   height: auto;
@@ -140,4 +141,44 @@ body {
 
 img {
   height: 75%;
+}
+
+@media (orientation: portrait) {
+  .card-grid {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vw 20vw 20vw 20vw;
+    grid-gap: 20px;
+    justify-items: center;
+    outline: 1px solid black;
+    /* display: flex;
+      flex-direction: column; */
+  }
+  .card {
+    width: 80%;
+    height: 20vw;
+    border-radius: 5px;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    box-shadow: 0 0 15px -5px black;
+  }
+  .card-1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  .card-2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .card-3 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+  .card-4 {
+    grid-column-start: 1;
+    grid-row-start: 4;
+  }
 }
