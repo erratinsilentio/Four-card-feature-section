@@ -48,11 +48,12 @@ body {
 .text-1 {
   font-size: 2rem;
   color: var(--DarkBlue);
+  font-weight: 100;
 }
 
 .text-2 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 900;
   color: var(--DarkBlue);
 }
 
@@ -195,10 +196,10 @@ img {
     width: 90vw;
   }
   .text-1 {
-    font-size: 1.85rem;
+    font-size: 1.5rem;
   }
-  .text2 {
-    font-size: 1.85rem;
+  .text-2 {
+    font-size: 1.5rem;
   }
   .text {
     width: 90vw;
@@ -206,6 +207,7 @@ img {
 
   .text-3 {
     width: 90vw;
+    font-size: 0.75rem;
   }
 
   .card-grid {
