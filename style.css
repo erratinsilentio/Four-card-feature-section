@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Poppins";
-  src: url("../Four-card-feature-section/design/Poppins-Medium.ttf");
+  src: url("./design/Poppins-Medium.ttf");
 }
 
 :root {
@@ -37,7 +37,6 @@ body {
   grid-template-rows: 1fr 1fr;
   align-self: flex-end;
   margin-top: 50px;
-  outline: 1px solid black;
 }
 .text {
   text-align: center;
@@ -63,17 +62,14 @@ body {
   line-height: 3.75vh;
   color: var(--GreyBlue);
   margin-bottom: 50px;
-  outline: 1px solid black;
 }
 
 .main-cards {
   display: grid;
   justify-content: center;
-  outline: 1px solid black;
 }
 
 .card-grid {
-  outline: 1px solid black;
   width: 100%;
   height: auto;
   display: grid;
@@ -240,7 +236,6 @@ img {
     color: var(--DarkBlue);
     align-self: flex-end;
     margin-bottom: 5px;
-    outline: 1px solid black;
   }
   .subtitle {
     color: var(--GreyBlue);
@@ -248,7 +243,6 @@ img {
     height: 40px;
     line-height: 20px;
     align-self: flex-start;
-    outline: 1px solid black;
   }
   .image {
     height: 80px;
