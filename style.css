@@ -16,6 +16,8 @@
 body {
   background-color: var(--LightGrey);
   display: grid;
+  justify-content: center;
+  align-items: flex-start;
   grid-template-rows: 1fr 2fr;
   font-family: "Poppins";
 }
@@ -35,10 +37,11 @@ body {
   grid-template-rows: 1fr 1fr;
   align-self: flex-end;
   margin-top: 50px;
+  outline: 1px solid black;
 }
 .text {
   text-align: center;
-  width: 35vw;
+  width: 500px;
   height: 5vh;
   line-height: 5vh;
 }
@@ -60,18 +63,18 @@ body {
   line-height: 3.75vh;
   color: var(--GreyBlue);
   margin-bottom: 50px;
+  outline: 1px solid black;
 }
 
 .main-cards {
-  height: auto;
-  width: 100vw;
   display: grid;
-  align-items: center;
   justify-content: center;
+  outline: 1px solid black;
 }
 
 .card-grid {
-  width: auto;
+  outline: 1px solid black;
+  width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: 20vw 20vw 20vw;
@@ -82,8 +85,8 @@ body {
 }
 
 .card {
-  width: 20vw;
-  height: 13vw;
+  width: 270px;
+  height: 170px;
   border-radius: 5px;
   padding: 1rem;
   display: grid;
@@ -113,61 +116,156 @@ body {
 }
 
 .ttl {
-  height: 3vw;
+  height: 40px;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .title {
   font-size: 1.5rem;
-  line-height: 3vw;
+  line-height: 40px;
   color: var(--DarkBlue);
   align-self: flex-end;
   margin-bottom: 5px;
 }
 .subtitle {
+  height: 40px;
   color: var(--GreyBlue);
   font-size: 0.9rem;
-  line-height: 1.5vw;
+  line-height: 20px;
 }
 .image {
-  height: 5vw;
+  height: 80px;
   display: grid;
   padding-right: 1rem;
   justify-content: flex-end;
   align-items: center;
-  align-self: flex-end;
+  margin-bottom: 15px;
 }
 
 img {
-  height: 75%;
+  height: 60%;
+}
+
+@media (min-width: 900px) and (max-width: 1250px) {
+  .card {
+    width: 200px;
+    height: 120px;
+  }
+  .title {
+    height: 30px;
+    line-height: 30px;
+  }
+  .subtitle {
+    height: 30px;
+    line-height: 15px;
+  }
+  .image {
+    height: 60px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 900px) {
+  .card {
+    width: 150px;
+    height: 100px;
+  }
+  .title {
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.25rem;
+  }
+  .subtitle {
+    height: 20px;
+    line-height: 10px;
+    font-size: 0.7rem;
+  }
+  .image {
+    height: 40px;
+  }
 }
 
 @media (orientation: portrait) {
+  body {
+    grid-template-rows: 1fr 4fr;
+  }
+  .main-text {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .big-text {
+    width: 90vw;
+  }
+  .text-1 {
+    font-size: 1.85rem;
+  }
+  .text2 {
+    font-size: 1.85rem;
+  }
+  .text {
+    width: 90vw;
+  }
+
+  .text-3 {
+    width: 90vw;
+  }
+
   .card-grid {
-    width: auto;
+    width: 90vw;
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20vw 20vw 20vw 20vw;
-    grid-gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
     justify-items: center;
-    outline: 1px solid black;
-    /* display: flex;
-      flex-direction: column; */
   }
   .card {
-    width: 80%;
-    height: 20vw;
+    width: 90%;
+    height: 30vh;
     border-radius: 5px;
     padding: 1rem;
     display: grid;
-    grid-template-rows: 1fr 1fr 2fr;
+    grid-gap: 10px;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
     box-shadow: 0 0 15px -5px black;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    height: 40px;
+    line-height: 40px;
+    color: var(--DarkBlue);
+    align-self: flex-end;
+    margin-bottom: 5px;
+    outline: 1px solid black;
+  }
+  .subtitle {
+    color: var(--GreyBlue);
+    font-size: 0.9rem;
+    height: 40px;
+    line-height: 20px;
+    align-self: flex-start;
+    outline: 1px solid black;
+  }
+  .image {
+    height: 80px;
+    display: grid;
+    padding-right: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: flex-end;
+  }
+
+  img {
+    height: 75%;
   }
   .card-1 {
     grid-column-start: 1;
     grid-row-start: 1;
+    margin-top: 0px;
   }
   .card-2 {
     grid-column-start: 1;
@@ -180,5 +278,6 @@ img {
   .card-4 {
     grid-column-start: 1;
     grid-row-start: 4;
+    margin-bottom: 0px;
   }
 }
