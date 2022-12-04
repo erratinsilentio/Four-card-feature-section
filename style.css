@@ -64,7 +64,7 @@ body {
 }
 
 .text-3 {
-  font-size: 1.15rem;
+  font-size: 0.9rem;
   overflow-wrap: break-word;
   line-height: 3.75vh;
   color: var(--GreyBlue);
@@ -106,17 +106,17 @@ body {
 .card-2 {
   grid-column-start: 3;
   grid-row-start: 2;
-  border-top: 5px solid var(--cyan);
+  border-top: 5px solid var(--blue);
 }
 .card-3 {
   grid-column-start: 0;
   grid-row-start: 2;
-  border-top: 5px solid var(--orange);
+  border-top: 5px solid var(--cyan);
 }
 .card-4 {
   grid-column-start: 2;
   grid-row-start: 3;
-  border-top: 5px solid var(--blue);
+  border-top: 5px solid var(--orange);
   align-self: flex-end;
 
   margin-bottom: 40px;
